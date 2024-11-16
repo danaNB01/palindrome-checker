@@ -1,0 +1,8 @@
+1- Let user enter the word.
+2- filter the word --> only alphabatical letters.
+    - regex str.replace("/[a-zA-Z]g/","");
+3- convert the word into lower or upper.
+    - str.toLowerCase()
+4- decide whether it is palindrome or not 'algorithm'
+    - str === str.split('').reverse().join('');
+5- print to user your decision.

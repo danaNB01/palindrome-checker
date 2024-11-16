@@ -1,0 +1,171 @@
+/* GENERAL STYLES */
+:root {
+  --dark-color: #0a0a23;
+  --white-color: #ffffff;
+  --gray-color: #f5f6f7;
+  --purple-color: #570987;
+  --green-color: #008000;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-color);
+  height: 100vh;
+}
+
+/* MOBILE STYLES */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+img {
+  height: 30px;
+}
+
+h1 {
+  color: var(--gray-color);
+  margin: 10px 0px;
+  font-weight: 700;
+}
+
+#palindrome-form {
+  background-color: var(--white-color);
+  border-radius: 5px;
+  margin: 10px 0px;
+  padding: 15px 20px;
+  text-align: center;
+  width: 500px;
+}
+
+label,
+input,
+button,
+p,
+span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+label {
+  color: var(--dark-color);
+}
+
+input {
+  color: var(--purple-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 3px;
+  border: none;
+  border-bottom: 2px solid var(--purple-color);
+}
+button {
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 7px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+.hide {
+  display: none;
+}
+
+#definition {
+  background-color: var(--green-color);
+  margin: 10px 0px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 500px;
+}
+p,
+span {
+  color: var(--gray-color);
+}
+.italic {
+  font-style: italic;
+}
+p {
+  display: inline;
+  margin-left: 2px;
+}
+
+i {
+  color: yellow;
+}
+
+/* CONDITIONAL STYLES */
+.show-result {
+  display: block;
+  color: var(--purple-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.bold {
+  display: inline;
+  font-weight: 700;
+}
+
+/* MEDIA QUERIES */
+/* SMALLER MOBILE STYLES */
+@media screen and (max-width: 576px) {
+  #definition {
+    width: 100%;
+  }
+  #palindrome-form {
+    width: 100%;
+  }
+}
+
+/* LARGE DESKTOP STYLES */
+@media screen and (min-width: 1200px) {
+  #definition {
+    width: 100%;
+  }
+  #palindrome-form {
+    width: 100%;
+  }
+  p,
+  span,
+  label,
+  input,
+  button {
+    font-size: 1.5rem;
+  }
+  input {
+    width: 400px;
+  }
+  button {
+    padding: 10px 20px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+}

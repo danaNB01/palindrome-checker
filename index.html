@@ -1,0 +1,53 @@
+<!-- D for the dope job ✨ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dana Baeisa" />
+    <meta name="description" content="A FreeCodeCamp Project for JS Beta" />
+    <title>Palindrome</title>
+    <!-- STYLE SHEET -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <img src="./img/fcc_primary_large.png" alt="freeCodeCamp Logo" />
+      <h1>Is it a Palindrome?</h1>
+      <!-- FORM -->
+      <form id="palindrome-form">
+        <label for="word">Enter in text to check for a palindrome:</label>
+        <br />
+        <input type="text" name="word" id="word" autocomplete="off"/>
+        <button type="button">Check</button>
+        <p id="result" class="hide"></p>
+      </form>
+      <!-- SECTION -->
+      <section id="definition">
+        <i class="fa-solid fa-lightbulb"></i>
+        <p>
+          A <span class="italic">palindrome</span> is a word or sentence that's
+          spelled the same way both forward and backward, ignoring punctuation,
+          case, and spacing.
+        </p>
+      </section>
+    </main>
+    <!-- SCRIPT LINK -->
+    <script src="script.js"></script>
+  </body>
+</html>
